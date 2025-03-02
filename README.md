@@ -6,7 +6,7 @@ This is a Next.js landing page application configured for deployment on AWS Ampl
 
 1. Install dependencies:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
 2. Run the development server:
@@ -19,6 +19,7 @@ This is a Next.js landing page application configured for deployment on AWS Ampl
 ## Building for Production
 
 ```bash
+npm ci --legacy-peer-deps
 npm run build
 ```
 
@@ -27,6 +28,7 @@ npm run build
 ### Option 1: Deploy via AWS Amplify Console (Recommended)
 
 1. Push your code to a Git repository (GitHub, GitLab, BitBucket, etc.)
+   - Make sure to include the `package-lock.json` file in your repository
 
 2. Log in to the [AWS Amplify Console](https://console.aws.amazon.com/amplify/home)
 
@@ -37,6 +39,7 @@ npm run build
 5. Configure build settings:
    - Amplify will automatically detect that this is a Next.js app
    - The included `amplify.yml` file will be used for build settings
+   - The build process uses `--legacy-peer-deps` to handle dependency conflicts
 
 6. Review and save
 
@@ -80,4 +83,5 @@ npm run build
 
 - `next.config.mjs`: Next.js configuration
 - `amplify.yml`: AWS Amplify build configuration
-- `tailwind.config.ts`: Tailwind CSS configuration 
+- `tailwind.config.ts`: Tailwind CSS configuration
+- `package-lock.json`: Ensures consistent dependency installation 
