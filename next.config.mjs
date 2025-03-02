@@ -15,12 +15,15 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    domains: ['amazonaws.com', 'amplifyapp.com'],
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  // Required for AWS Amplify
+  output: 'standalone',
 }
 
 mergeConfig(nextConfig, userConfig)
