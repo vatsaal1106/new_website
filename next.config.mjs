@@ -22,8 +22,12 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  // Required for AWS Amplify
+  // Required for EC2 deployment
   output: 'standalone',
+  // Add hostname for EC2
+  hostname: '0.0.0.0',
+  // Add port configuration
+  port: process.env.PORT || 3000,
 }
 
 mergeConfig(nextConfig, userConfig)
