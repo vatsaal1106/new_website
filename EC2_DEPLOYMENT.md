@@ -86,13 +86,34 @@ pm2 start next-app
    - Ensure ec2-user has proper permissions
    - Check file ownership: `ls -la /home/ec2-user/app`
 
+4. **Dependency conflicts**:
+   - If you encounter dependency conflicts, try:
+     ```bash
+     # Clean npm cache and remove existing modules
+     rm -rf node_modules
+     rm -rf package-lock.json
+     npm cache clean --force
+     
+     # Install dependencies with legacy peer deps
+     npm install --legacy-peer-deps
+     ```
+   - If issues persist, check package.json for conflicting versions
+   - Common conflicts:
+     - date-fns and react-day-picker versions
+     - React and React DOM versions
+     - TypeScript and @types versions
+
 ## Maintenance
 
 1. **Update Application**:
    ```bash
    cd /home/ec2-user/app
    git pull
-   npm ci --legacy-peer-deps
+   # Clean install with legacy peer deps
+   rm -rf node_modules
+   rm -rf package-lock.json
+   npm cache clean --force
+   npm install --legacy-peer-deps
    npm run build
    pm2 restart next-app
    ```
