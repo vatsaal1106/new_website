@@ -32,15 +32,9 @@ cd $APP_DIR
 echo "Cloning repository..."
 git clone https://github.com/vatsaal1106/new_website.git .
 
-# Clean npm cache and remove existing node_modules
-echo "Cleaning npm cache and removing existing node_modules..."
-rm -rf node_modules
-rm -rf package-lock.json
-npm cache clean --force
-
-# Install dependencies with legacy peer deps flag
+# Install dependencies
 echo "Installing dependencies..."
-npm install --legacy-peer-deps
+npm ci --legacy-peer-deps
 
 # Build the application
 echo "Building the application..."
