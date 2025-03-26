@@ -18,65 +18,40 @@ interface TeamMember {
 
 const leadership: TeamMember[] = [
   {
-    name: "Dr. Sarah Chen",
+    name: "Vatsal Deliwala",
     role: "Chief Executive Officer",
-    bio: "Former ML Research Lead at DeepMind. PhD in Computer Science from Stanford. Pioneer in neural architecture search and efficient ML systems.",
+    bio: "Chemical and Biomedical Engineer from the University of Queensland. Vatsal has extensive experience in the process and engineering industries. He is also a ML researcher with multiple patents to his name.",
     image: "/placeholder.svg?height=400&width=400",
     social: {
-      twitter: "https://twitter.com/sarahchen",
-      linkedin: "https://linkedin.com/in/sarahchen",
+      twitter: "https://twitter.com/",
+      linkedin: "https://linkedin.com/",
     },
   },
   {
-    name: "Michael Rodriguez",
-    role: "Chief Technology Officer",
-    bio: "20+ years in enterprise software. Previously VP of Engineering at Palantir. Built scalable AI systems for Fortune 500 companies.",
+    name: "Pranav Krishna Biju",
+    role: "Chief Operating Officer",
+    bio: "Years of experience in IT and Software Consulting. Built scalable IT systems for leading companies throughout the Middle East.",
     image: "/placeholder.svg?height=400&width=400",
     social: {
-      github: "https://github.com/mrodriguez",
-      linkedin: "https://linkedin.com/in/mrodriguez",
+      github: "https://github.com/",
+      linkedin: "https://linkedin.com/",
     },
   },
-  {
-    name: "Dr. James Wilson",
-    role: "Chief Research Officer",
-    bio: "Published 50+ papers in top AI conferences. Led breakthrough research in transformer architectures and efficient training methods.",
-    image: "/placeholder.svg?height=400&width=400",
-    social: {
-      twitter: "https://twitter.com/jwilson",
-      github: "https://github.com/jwilson",
-    },
+  
   },
 ]
 
 const team: TeamMember[] = [
   {
-    name: "Emily Chang",
-    role: "Lead ML Engineer",
-    bio: "Specializes in distributed training systems and model optimization.",
+    name: "Sahir Shiek",
+    role: "Lead ML Statistician",
+    bio: "Specializes in distributed in linear algebra and data-driven mathematics.",
     image: "/placeholder.svg?height=300&width=300",
     social: {
       github: "https://github.com/echang",
     },
   },
-  {
-    name: "David Kumar",
-    role: "Security Architect",
-    bio: "Expert in cryptographic systems and secure ML deployment.",
-    image: "/placeholder.svg?height=300&width=300",
-    social: {
-      linkedin: "https://linkedin.com/in/dkumar",
-    },
-  },
-  {
-    name: "Lisa Park",
-    role: "Research Scientist",
-    bio: "Focus on reinforcement learning and multi-agent systems.",
-    image: "/placeholder.svg?height=300&width=300",
-    social: {
-      twitter: "https://twitter.com/lisapark",
-    },
-  },
+ 
   // Add more team members as needed
 ]
 
