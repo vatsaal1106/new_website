@@ -38,7 +38,6 @@ const leadership: TeamMember[] = [
     },
   },
   
-  },
 ]
 
 const team: TeamMember[] = [
