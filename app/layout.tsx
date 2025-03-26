@@ -5,35 +5,9 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 // Load Pro Jakarta Sans font
-const proJakartaSans = localFont({
-  src: [
-    {
-      path: "../public/fonts/ProJakartaSans-Light.woff2",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/ProJakartaSans-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/ProJakartaSans-Medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/ProJakartaSans-SemiBold.woff2",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/ProJakartaSans-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-pro-jakarta",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
 })
 
 export const metadata: Metadata = {
