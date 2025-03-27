@@ -15,7 +15,7 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['amazonaws.com', 'amplifyapp.com'],
+    domains: ['amazonaws.com', 'amplifyapp.com', 'vercel-storage.com', 'public.blob.vercel-storage.com', 'hebbkx1anhila5yf.public.blob.vercel-storage.com'],
   },
   experimental: {
     webpackBuildWorker: true,
@@ -24,10 +24,6 @@ const nextConfig = {
   },
   // Required for EC2 deployment
   output: 'standalone',
-  // Add hostname for EC2
-  hostname: '0.0.0.0',
-  // Add port configuration
-  port: process.env.PORT || 3000,
 }
 
 mergeConfig(nextConfig, userConfig)

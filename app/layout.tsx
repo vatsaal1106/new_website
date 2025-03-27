@@ -1,14 +1,19 @@
 import type React from "react"
 import type { Metadata } from "next"
-import localFont from "next/font/local"
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
-// Load Pro Jakarta Sans font
+// Load fonts
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+})
+
+// Define Plus Jakarta Sans font
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: '--font-pro-jakarta',
 })
 
 export const metadata: Metadata = {
@@ -35,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${proJakartaSans.variable} font-sans`}>
+      <body className={`${plusJakartaSans.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
@@ -43,7 +48,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
