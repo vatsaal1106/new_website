@@ -68,6 +68,9 @@ export default function Home() {
             <Link href="#about" className="text-sm font-light hover:text-primary transition-colors">
               About
             </Link>
+            <Link href="/events" className="text-sm font-light hover:text-primary transition-colors">
+              Events
+            </Link>
           </nav>
           <div className="flex items-center gap-4">
             <ThemeToggle />
