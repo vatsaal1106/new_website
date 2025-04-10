@@ -75,7 +75,7 @@ export default function EventsPage() {
               className="rounded-full border-primary text-primary hover:bg-primary/10"
               asChild
             >
-              <a href="mailto:investors@nova.ai">
+              <a href="mailto:contact@novaintelligence.tech">
                 Request Invitation
               </a>
             </Button>
@@ -202,7 +202,7 @@ export default function EventsPage() {
               className="rounded-full bg-primary hover:bg-primary/90 text-white shadow-[0_0_25px_rgba(var(--primary-rgb),0.5)]"
               asChild
             >
-              <a href="mailto:investors@nova.ai">
+              <a href="mailto:contact@novaintelligence.tech">
                 Request Investor Deck
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
@@ -551,7 +551,7 @@ export default function EventsPage() {
                 className="rounded-full bg-primary hover:bg-primary/90 text-white shadow-[0_0_30px_rgba(var(--primary-rgb),0.7)]"
                 asChild
               >
-                <a href="mailto:investors@nova.ai?subject=Investment%20Inquiry%20-%20Private%20Prospectus%20Request">
+                <a href="mailto:contact@novaintelligence.tech?subject=Investment%20Inquiry%20-%20Private%20Prospectus%20Request">
                   Request Full Prospectus
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
@@ -563,7 +563,7 @@ export default function EventsPage() {
                 className="rounded-full border-primary text-primary hover:bg-primary/10"
                 asChild
               >
-                <a href="https://calendly.com/nova-investors" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/v-deliwal-novaintelligence" target="_blank" rel="noopener noreferrer">
                   Schedule Executive Meeting
                 </a>
               </Button>
